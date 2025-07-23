@@ -6,7 +6,7 @@ export default function Main() {
       <div className="max-w-prose text-center">
         <div className="flex justify-center items-center mb-4">
           <Icon position="left" />
-          <h1 className="text-3xl font-bold">stay-hydrated.vip</h1>
+          <h1 className="text-3xl font-bold">Stay Hydrated</h1>
           <Icon position="right" />
         </div>
         <p className="text-lg mb-8">A simple hydration reminder timer.</p>
