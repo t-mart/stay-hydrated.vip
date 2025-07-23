@@ -40,8 +40,16 @@ export default function Timer() {
   }
 
   return (
-    <div className="h-50 flex flex-col items-center justify-center rounded-2xl border-4 border-primary">
-      {millisecondsLeft === undefined ? (
+    <div
+      className={`h-50 flex flex-col items-center justify-center rounded-2xl p-4 ${
+        isRunning ? "border-6 bg-background-light" : ""
+      } border-primary`}
+    >
+      {isRunning ? (
+        <div className="text-8xl font-mono">
+          {formatDuration(millisecondsLeft)}
+        </div>
+      ) : (
         <>
           <p className="mb-8 text-muted">
             Press the button, and every 15 minutes, a notification will sound,
@@ -63,8 +71,6 @@ export default function Timer() {
             Start
           </button>
         </>
-      ) : (
-        <div className="text-8xl font-mono">{formatDuration(millisecondsLeft)}</div>
       )}
       {/* eslint-disable-next-line jsx-a11y/media-has-caption */}
       <audio ref={audioRef} src="/notification-sound.mp3" />

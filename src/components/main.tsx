@@ -4,9 +4,9 @@ export default function Main() {
   return (
     <div className="flex flex-col items-center justify-center h-screen">
       <div className="max-w-prose text-center">
-        <div className="flex justify-center">
+        <div className="flex justify-center items-center mb-4">
           <Icon position="left" />
-          <h1 className="text-4xl font-bold mb-4">stay-hydrated.vip</h1>
+          <h1 className="text-3xl font-bold">stay-hydrated.vip</h1>
           <Icon position="right" />
         </div>
         <p className="text-lg mb-8">A simple hydration reminder timer.</p>
