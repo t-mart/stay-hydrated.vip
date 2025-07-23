@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #282828;
+  --color-text: #ebdbb2;
+  --color-muted: #a89984;
+  --color-primary: #076678;
+  --color-primary-hover: #458588;
+  --color-link: #fbf1c7;
+}
+
+:root {
+  @apply bg-background text-text p-4;
+}
+
+a,
+.link-button {
+  @apply text-link underline underline-offset-2 hover:text-primary-hover;
+}
+
+*::selection {
+  @apply bg-primary-hover text-background;
+}
